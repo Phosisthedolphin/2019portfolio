@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Machine';
+    src: url('../font/MachineStd.otf');
+    font-style: normal;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #333;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: blue;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background: lightblue;
+    color: white;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: darkblue;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+#sidebar ul p {
+    color: white;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: black;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.drowdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+main  {
+    width: 100%;
+}
+
+.jumbotron {
+    background: black;
+    color: #FF5200;
+    font-family: 'Machine', sans-serif;
+    font-size: 140px;
+}
+helloworld {
+    position: absolute;
+    z-index: 40;
+}
+.lead {
+    border-top: 8px solid gray;
+    border-bottom: 8px solid gray;
+    font-family: 'Machine', sans-serif;
+    font-size: 40px;
+    position: absolute;
+    z-index: 20;
+    background: black;
+}
+
+#mycanvas {
+    background: black;
+    position: relative;
+    top: -60px;
+    bottom: -40px;
+}
+
+
+.blinking-cursor {
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      color: #FF5200;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: #FF5200;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    from, to {
+      color: #FF5200;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-ms-keyframes blink {
+    from, to {
+      color: #FF5200;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-o-keyframes blink {
+    from, to {
+      color: #FF5200;
+    }
+    50% {
+      color: black;
+    }
+  }
