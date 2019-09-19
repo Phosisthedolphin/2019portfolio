@@ -4,17 +4,21 @@
     font-style: normal;
 }
 
+html {
+    background: black;
+}
+
 body {
     font-family: 'Arial', sans-serif;
-    background: #333;
+    background: #FF5200;
 }
 
 p {
-    font-family: 'Arial', sans-serif;
+    font-family: monospace;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: blue;
+    /* color: blue; */
 }
 
 .wrapper {
@@ -96,6 +100,8 @@ a[data-toggle="collapse"] {
 
 main  {
     width: 100%;
+    /* background: #FF5200; */
+    /* box-shadow: 0 0 50px 70px #FF5200; */
 }
 
 .jumbotron {
@@ -103,26 +109,69 @@ main  {
     color: #FF5200;
     font-family: 'Machine', sans-serif;
     font-size: 140px;
+    max-height: 430px;
+    
 }
-helloworld {
+
+.about {
+    background-image: linear-gradient(#FF5200, black 22%);
+    height: 600px;
+    padding: 140px;
+    font-size: 60px;
+    color: #FF5200;
+    font-family: "Machine", sans-serif;
+    text-align: left;
+}
+.about-me {
+    min-height: 600px;
+    background: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #6c757d;
+    font-size: 28px;
+    padding: auto;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 150px;
+    text-shadow: 1px 1px 1px lightgray;
+}
+.projects {
+    min-height: 600px;
+    background: black;
+    z-index: -20;
+}
+.pulse {
+    background: #FF5200;
+    height: 6px;
+    box-shadow: 0 0 50px 70px #FF5200;
+    z-index: 100;
+}
+/* helloworld {
     position: absolute;
     z-index: 40;
-}
+} */
 .lead {
-    border-top: 8px solid gray;
-    border-bottom: 8px solid gray;
+    
+    /* text-shadow: -1px 4px 2px rgba(255,82,0,0.6); */
+}
+h2 {
+    border-top: 8px solid #6c757d;
+    border-bottom: 8px solid #6c757d;
     font-family: 'Machine', sans-serif;
     font-size: 40px;
-    position: absolute;
-    z-index: 20;
+    position: relative;
+    z-index: 50;
     background: black;
+    color: #6c757d;
+}
+.white {
+    color:#FF5200;
+    text-shadow: none;
 }
 
 #mycanvas {
     background: black;
     position: relative;
-    top: -60px;
-    bottom: -40px;
+    top: -120px;
 }
 
 
