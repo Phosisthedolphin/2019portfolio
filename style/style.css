@@ -163,6 +163,8 @@ h2 {
     z-index: 50;
     background: black;
     color: #6c757d;
+    /* box-shadow: -2px 1px 10px 2px #FF5200; */
+    /* border-radius: 30%; */
 }
 .white {
     color:#FF5200;
